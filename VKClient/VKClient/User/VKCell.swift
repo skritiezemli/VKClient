@@ -12,6 +12,8 @@ class VKCell: UITableViewCell {
     
     @IBOutlet weak var friendsName: UILabel!
     
+    @IBOutlet weak var iconFriend: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -7,19 +7,24 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+//private let reuseIdentifier = "Cell"
 
 class VKCollectionController: UICollectionViewController {
+    
+    var pictureVK: [FriendsModel] = [
+        FriendsModel(name: "Cat", icon: "cat-3")
+    ]
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //collectionView.dataSource = self
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
@@ -43,12 +48,13 @@ class VKCollectionController: UICollectionViewController {
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
+        return pictureVK.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! VKCollectionCell
+        
+        cell.configure(model: pictureVK[indexPath.row])
     
         // Configure the cell
     
