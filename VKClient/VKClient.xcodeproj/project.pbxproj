@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3B86A05275F74FE00E972F1 /* VKTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B86A04275F74FE00E972F1 /* VKTableController.swift */; };
+		C3B86A07275F75DC00E972F1 /* VKCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B86A06275F75DC00E972F1 /* VKCell.swift */; };
+		C3B86A0C275F807400E972F1 /* VKGroupTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B86A0B275F807400E972F1 /* VKGroupTableController.swift */; };
+		C3B86A0E275F809B00E972F1 /* VKGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B86A0D275F809B00E972F1 /* VKGroupCell.swift */; };
+		C3B86A10275F85BA00E972F1 /* OtherGroupTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B86A0F275F85BA00E972F1 /* OtherGroupTableController.swift */; };
+		C3B86A12275F8AAB00E972F1 /* VKCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B86A11275F8AAB00E972F1 /* VKCollectionController.swift */; };
+		C3B86A14275F8AC400E972F1 /* VKCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B86A13275F8AC400E972F1 /* VKCollectionCell.swift */; };
 		C3E498012752583C008F45AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E498002752583C008F45AD /* AppDelegate.swift */; };
 		C3E498032752583C008F45AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E498022752583C008F45AD /* SceneDelegate.swift */; };
 		C3E498052752583C008F45AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E498042752583C008F45AD /* ViewController.swift */; };
@@ -16,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C3B86A04275F74FE00E972F1 /* VKTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKTableController.swift; sourceTree = "<group>"; };
+		C3B86A06275F75DC00E972F1 /* VKCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKCell.swift; sourceTree = "<group>"; };
+		C3B86A0B275F807400E972F1 /* VKGroupTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKGroupTableController.swift; sourceTree = "<group>"; };
+		C3B86A0D275F809B00E972F1 /* VKGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKGroupCell.swift; sourceTree = "<group>"; };
+		C3B86A0F275F85BA00E972F1 /* OtherGroupTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherGroupTableController.swift; sourceTree = "<group>"; };
+		C3B86A11275F8AAB00E972F1 /* VKCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKCollectionController.swift; sourceTree = "<group>"; };
+		C3B86A13275F8AC400E972F1 /* VKCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKCollectionCell.swift; sourceTree = "<group>"; };
 		C3E497FD2752583C008F45AD /* VKClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E498002752583C008F45AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3E498022752583C008F45AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +51,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C3B86A08275F7F2A00E972F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3E498042752583C008F45AD /* ViewController.swift */,
+				C3E498022752583C008F45AD /* SceneDelegate.swift */,
+				C3E498002752583C008F45AD /* AppDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3B86A09275F7F7F00E972F1 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				C3B86A06275F75DC00E972F1 /* VKCell.swift */,
+				C3B86A04275F74FE00E972F1 /* VKTableController.swift */,
+				C3B86A11275F8AAB00E972F1 /* VKCollectionController.swift */,
+				C3B86A13275F8AC400E972F1 /* VKCollectionCell.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		C3B86A0A275F7F9300E972F1 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				C3B86A0B275F807400E972F1 /* VKGroupTableController.swift */,
+				C3B86A0D275F809B00E972F1 /* VKGroupCell.swift */,
+				C3B86A0F275F85BA00E972F1 /* OtherGroupTableController.swift */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
 		C3E497F42752583C008F45AD = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +101,9 @@
 		C3E497FF2752583C008F45AD /* VKClient */ = {
 			isa = PBXGroup;
 			children = (
-				C3E498002752583C008F45AD /* AppDelegate.swift */,
-				C3E498022752583C008F45AD /* SceneDelegate.swift */,
-				C3E498042752583C008F45AD /* ViewController.swift */,
+				C3B86A0A275F7F9300E972F1 /* Group */,
+				C3B86A09275F7F7F00E972F1 /* User */,
+				C3B86A08275F7F2A00E972F1 /* Model */,
 				C3E498062752583C008F45AD /* Main.storyboard */,
 				C3E498092752583D008F45AD /* Assets.xcassets */,
 				C3E4980B2752583D008F45AD /* LaunchScreen.storyboard */,
@@ -138,9 +183,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3B86A12275F8AAB00E972F1 /* VKCollectionController.swift in Sources */,
+				C3B86A07275F75DC00E972F1 /* VKCell.swift in Sources */,
 				C3E498052752583C008F45AD /* ViewController.swift in Sources */,
+				C3B86A0E275F809B00E972F1 /* VKGroupCell.swift in Sources */,
 				C3E498012752583C008F45AD /* AppDelegate.swift in Sources */,
+				C3B86A0C275F807400E972F1 /* VKGroupTableController.swift in Sources */,
+				C3B86A14275F8AC400E972F1 /* VKCollectionCell.swift in Sources */,
+				C3B86A10275F85BA00E972F1 /* OtherGroupTableController.swift in Sources */,
 				C3E498032752583C008F45AD /* SceneDelegate.swift in Sources */,
+				C3B86A05275F74FE00E972F1 /* VKTableController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
