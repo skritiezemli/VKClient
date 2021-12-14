@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -296,22 +296,39 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat-1" translatesAutoresizingMaskIntoConstraints="NO" id="DOl-ag-vY0">
-                                            <rect key="frame" x="321.5" y="11" width="72.5" height="62"/>
-                                        </imageView>
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNZ-OS-e7R" customClass="AvatarView" customModule="VKClient">
+                                            <rect key="frame" x="374" y="27" width="30" height="30"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat-1" translatesAutoresizingMaskIntoConstraints="NO" id="DOl-ag-vY0">
+                                                    <rect key="frame" x="0.0" y="-113" width="30" height="256"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="DOl-ag-vY0" firstAttribute="leading" secondItem="CNZ-OS-e7R" secondAttribute="leading" id="W0e-EK-pp8"/>
+                                                <constraint firstAttribute="trailing" secondItem="DOl-ag-vY0" secondAttribute="trailing" id="irj-QX-8eD"/>
+                                                <constraint firstAttribute="width" constant="30" id="ivk-R4-Vq6"/>
+                                                <constraint firstAttribute="height" constant="30" id="kfF-FG-IRh"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                    <real key="value" value="40"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottomMargin" secondItem="rIh-n8-4Kd" secondAttribute="bottom" id="7p3-QP-zvV"/>
+                                        <constraint firstItem="CNZ-OS-e7R" firstAttribute="centerY" secondItem="utM-Sg-ov9" secondAttribute="centerY" id="G6h-se-FW8"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rIh-n8-4Kd" secondAttribute="trailing" constant="20" symbolic="YES" id="Hdw-1S-4iX"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="DOl-ag-vY0" secondAttribute="bottom" id="LD4-Al-TZH"/>
+                                        <constraint firstItem="DOl-ag-vY0" firstAttribute="centerY" secondItem="utM-Sg-ov9" secondAttribute="centerY" id="IfJ-oK-5Jk"/>
                                         <constraint firstItem="rIh-n8-4Kd" firstAttribute="top" secondItem="utM-Sg-ov9" secondAttribute="topMargin" id="OEJ-jx-OL1"/>
-                                        <constraint firstItem="DOl-ag-vY0" firstAttribute="trailing" secondItem="utM-Sg-ov9" secondAttribute="trailingMargin" id="f8w-7A-n8U"/>
-                                        <constraint firstItem="DOl-ag-vY0" firstAttribute="top" secondItem="utM-Sg-ov9" secondAttribute="topMargin" id="slN-gh-6ky"/>
-                                        <constraint firstItem="DOl-ag-vY0" firstAttribute="leading" secondItem="rIh-n8-4Kd" secondAttribute="trailing" constant="260" id="v6v-l8-irB"/>
+                                        <constraint firstAttribute="trailing" secondItem="CNZ-OS-e7R" secondAttribute="trailing" constant="10" id="igr-30-q67"/>
                                         <constraint firstItem="rIh-n8-4Kd" firstAttribute="leading" secondItem="utM-Sg-ov9" secondAttribute="leadingMargin" id="vAG-un-Zhi"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="avatarView" destination="CNZ-OS-e7R" id="K4n-IO-u4M"/>
                                     <outlet property="friendsName" destination="rIh-n8-4Kd" id="xGg-uY-o4Y"/>
                                     <outlet property="iconFriend" destination="DOl-ag-vY0" id="wDP-JT-vkS"/>
                                     <segue destination="PjR-3i-NaE" kind="show" id="xO3-oB-LWF"/>
