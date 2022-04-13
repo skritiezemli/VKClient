@@ -15,6 +15,7 @@
 		C3B86A12275F8AAB00E972F1 /* VKCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B86A11275F8AAB00E972F1 /* VKCollectionController.swift */; };
 		C3B86A14275F8AC400E972F1 /* VKCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B86A13275F8AC400E972F1 /* VKCollectionCell.swift */; };
 		C3B86A16276354C500E972F1 /* FriendsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B86A15276354C500E972F1 /* FriendsModel.swift */; };
+		C3CCA82A2768E49400E8D738 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CCA8292768E49400E8D738 /* AvatarView.swift */; };
 		C3E498012752583C008F45AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E498002752583C008F45AD /* AppDelegate.swift */; };
 		C3E498032752583C008F45AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E498022752583C008F45AD /* SceneDelegate.swift */; };
 		C3E498052752583C008F45AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E498042752583C008F45AD /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 		C3B86A11275F8AAB00E972F1 /* VKCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKCollectionController.swift; sourceTree = "<group>"; };
 		C3B86A13275F8AC400E972F1 /* VKCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKCollectionCell.swift; sourceTree = "<group>"; };
 		C3B86A15276354C500E972F1 /* FriendsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsModel.swift; sourceTree = "<group>"; };
+		C3CCA8292768E49400E8D738 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		C3E497FD2752583C008F45AD /* VKClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E498002752583C008F45AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3E498022752583C008F45AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				C3B86A04275F74FE00E972F1 /* VKTableController.swift */,
 				C3B86A11275F8AAB00E972F1 /* VKCollectionController.swift */,
 				C3B86A13275F8AC400E972F1 /* VKCollectionCell.swift */,
+				C3CCA8292768E49400E8D738 /* AvatarView.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3B86A12275F8AAB00E972F1 /* VKCollectionController.swift in Sources */,
+				C3CCA82A2768E49400E8D738 /* AvatarView.swift in Sources */,
 				C3B86A16276354C500E972F1 /* FriendsModel.swift in Sources */,
 				C3B86A07275F75DC00E972F1 /* VKCell.swift in Sources */,
 				C3E498052752583C008F45AD /* ViewController.swift in Sources */,

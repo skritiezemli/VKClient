@@ -42,6 +42,13 @@ class VKTableController: UITableViewController {
 //        cell.friendsName.text = name
         cell.friendsName.text = people[indexPath.row].name
         cell.iconFriend.image = UIImage(named: people[indexPath.row].icon)
+        cell.iconFriend.frame = cell.avatarView.bounds
+        let radius = cell.iconFriend.frame.size.width / 2
+        cell.avatarView.layer.cornerRadius = radius
+        cell.iconFriend.layer.masksToBounds = true
+        cell.iconFriend.layer.cornerRadius = radius
+
+        
         
         
         return cell
