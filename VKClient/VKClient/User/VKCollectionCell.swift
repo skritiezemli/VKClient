@@ -10,8 +10,13 @@ import UIKit
 class VKCollectionCell: UICollectionViewCell {
     
     
-    @IBOutlet weak var namePictures: UILabel!
+    @IBOutlet weak var pictureName: UILabel!
     
+    @IBOutlet weak var picture: UIImageView!
     
-    @IBOutlet weak var pictures: UIImageView!
+    private var collectionModel: FriendsModel?
+    func configure(model: FriendsModel){
+        pictureName.text = model.name
+        picture.image = UIImage(named: model.icon)
+    }
 }

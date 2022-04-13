@@ -9,7 +9,11 @@ import UIKit
 
 class VKTableController: UITableViewController {
     
-    var peopleName = ["Andrey","Natali","Sofia"]
+//    var peopleName = ["Andrey","Natali","Sofia"]
+    var people: [FriendsModel] = [
+        FriendsModel(name: "Ivan", icon: "cat-1"),
+        FriendsModel(name: "Rita", icon: "cat-2")
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,17 +32,22 @@ class VKTableController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return peopleName.count
+        return people.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! VKCell
-                let name = peopleName[indexPath.row]
-        cell.friendsName.text = name
+        
+//        let name = peopleName[indexPath.row]
+//        cell.friendsName.text = name
+        cell.friendsName.text = people[indexPath.row].name
+        cell.iconFriend.image = UIImage(named: people[indexPath.row].icon)
+        
         
         return cell
     }
-  
+    
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -53,7 +62,7 @@ class VKTableController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            peopleName.remove(at: indexPath.row)
+            people.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
